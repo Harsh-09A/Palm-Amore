@@ -276,3 +276,13 @@ figure.snip1113 h4 {
   opacity: 0.6;
   font-size: 1.1em;
 }
+
+/* Location Features */
+
+.location_features_section .locaton-features {
+  font-size: 1.2rem;
+}
+.location_features_section .locaton-features i {
+  color: var(--colorSecondary);
+  margin-right: 10px;
+}

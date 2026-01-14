@@ -22,6 +22,7 @@ html {
   --colorSecondary: #067dac;
   --colorBlack: #000000;
   --colorWhite: #ffffff;
+  --colorLightGray: #f5f5f5;
 }
 
 /* Navbar Starts */
@@ -175,3 +176,19 @@ main {
   border: 3px solid var(--colorSecondary);
 }
 /* gallery ends */
+
+/* .pricing-section  */
+.pricing-section {
+  padding: 4rem 0;
+  background-color: var(--colorLightGray);
+}
+
+.pricing-section .floor-img {
+  border: 2px solid var(--colorPrimary);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pricing-section .at-property-dis {
+  border-radius: 10px;
+}

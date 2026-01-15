@@ -71,6 +71,12 @@ header {
   .navbar-brand img {
     height: 45px;
   }
+  .offcanvas-body .nav-link i {
+    margin-left: 5px;
+  }
+  .offcanvas-body .nav-link {
+    margin-top: 10px;
+  }
 }
 
 /* Navbar Ends */

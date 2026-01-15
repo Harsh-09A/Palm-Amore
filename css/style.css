@@ -97,14 +97,14 @@ main {
 
 @media screen and (max-width: 600px) {
   .carousel-item .banner1 {
-    content: url("../img/banners/mobile_banner1.jpg");
-  }
-  .carousel-item .banner2 {
     content: url("../img/banners/mobile_banner2.jpg");
   }
-  .carousel-item .banner3 {
-    content: url("../img/banners/mobile_banner3.jpg");
+  .carousel-item .banner2 {
+    content: url("../img/banners/mobile_banner1.jpg");
   }
+  /* .carousel-item .banner3 {
+    content: url("../img/banners/mobile_banner3.jpg");
+  } */
 }
 
 .carousel-control-prev,

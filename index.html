@@ -109,44 +109,44 @@
                   class="nav-link active"
                   aria-current="page"
                   href="#slider_section">
-                  <i class="fa-solid fa-house nav-icon"></i>
+                  <i class="fa-solid fa-house nav-icon fa-flip"></i>
                   <span class="d-sm-inline"> Home </span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#overview_section">
-                  <i class="fa-solid fa-coins nav-icon"></i>
+                  <i class="fa-solid fa-coins nav-icon fa-flip"></i>
                   <span class="d-sm-inline"> Overview </span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#gallery_section">
-                  <i class="fa-solid fa-images nav-icon"></i>
+                  <i class="fa-solid fa-images nav-icon fa-flip"></i>
                   <span class="d-sm-inline"> Gallery </span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#configuration_section">
-                  <i class="fa-solid fa-sliders nav-icon"></i>
+                  <i class="fa-solid fa-sliders nav-icon fa-flip"></i>
                   <span class="d-sm-inline"> Configuration </span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#amenities_section">
-                  <i class="fa-solid fa-wifi nav-icon"></i>
+                  <i class="fa-solid fa-wifi nav-icon fa-flip"></i>
                   <span class="d-sm-inline"> Amenities </span>
                 </a>
               </li>
 
               <li class="nav-item">
                 <a class="nav-link" href="#location_section">
-                  <i class="fa-solid fa-map-location nav-icon"></i>
+                  <i class="fa-solid fa-map-location nav-icon fa-flip"></i>
                   <span class="d-sm-inline"> Location </span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about_section">
-                  <i class="fa-solid fa-user nav-icon"></i>
+                  <i class="fa-solid fa-user nav-icon fa-flip"></i>
                   <span class="d-sm-inline"> About Us </span>
                 </a>
               </li>
@@ -250,36 +250,51 @@
           <!-- Highlights Section -->
           <div class="col-12 col-md-6 mt-2 pt-2">
             <div class="highlights-section">
-              <!-- <h2 class="section-title">Project Hallmarks</h2> -->
-              <p class="section-subtitle">
-                Gami Palm Amore is an excellently designed gated community along
-                the Palm Beach Road in Seawoods. The multiple elevations
-                comprise a range of 2 BHK, 3 BHK, 4 BHK, and 5 BHK apartments.
-                These spacious apartments come with an extensive deck in the
-                living room and a balcony in the master bedroom. The designer
-                residences exhibit a blend of exclusivity and grace. This gated
-                community has a 24/7 water supply and power backup for common
-                areas and lifts. Moreover, it also features 43+ exquisite
-                lifestyle amenities for recreation, social wellness, fitness,
-                and entertainment. It includes a swimming pool with deck, kids’
-                play area, squash court, badminton court, gymnasium with a
-                dedicated gym for women, yoga lawn, banquet hall, reading room,
-                music library, etc.
-                <br /><br />
-
-                Situated in the esteemed neighbourhood of the Palm Beach Road,
-                it has some of the finest social landmarks. DAV Public School,
-                Delhi Public School, Jewel of Navi Mumbai, DY Patil University,
-                Apollo Hospital, Podar International School, Healing Hands
-                Clinic, Seawoods Grand Central Mall, Dmart, Zudio, and Wonder’s
-                Park are nearby. Being adjacent to the Palm Beach Road, it is
-                well-connected to the commercial hubs of Navi Mumbai. Sion
-                Panvel Highway and Seawoods Railway Station are 5-10 minutes
-                away. The Atal Setu and the upcoming Navi Mumbai International
-                Airport are just a 20-minute drive away via the Airport Road.
-                So, embrace exclusivity with the designer residences of Gami
-                Palm Amore in Seawoods.
-              </p>
+              <div>
+                <span>
+                  Gami Palm Amore is an excellently designed gated community
+                  along the Palm Beach Road in Seawoods. The multiple elevations
+                  comprise a range of 2 BHK, 3 BHK, 4 BHK, and 5 BHK apartments.
+                  These spacious apartments come with an extensive deck in the
+                  living room and a balcony in the master bedroom. The designer
+                  residences exhibit a blend of exclusivity and grace. This
+                  gated community has a 24/7 water supply and power backup for
+                  common areas and lifts. Moreover, it also features 43+
+                  exquisite lifestyle amenities for recreation, social wellness,
+                  fitness, and entertainment. It includes a swimming pool with
+                  deck, kids’ play area, squash court, badminton court,
+                  gymnasium with a dedicated gym for women, yoga lawn, banquet
+                  hall, reading room, music library, etc.
+                </span>
+                <span id="dots30" style="display: inline"></span>
+                <span id="more30" style="display: none">
+                  <span>
+                    <br /><br />
+                    Situated in the esteemed neighbourhood of the Palm Beach
+                    Road, it has some of the finest social landmarks. DAV Public
+                    School, Delhi Public School, Jewel of Navi Mumbai, DY Patil
+                    University, Apollo Hospital, Podar International School,
+                    Healing Hands Clinic, Seawoods Grand Central Mall, Dmart,
+                    Zudio, and Wonder’s Park are nearby. Being adjacent to the
+                    Palm Beach Road, it is well-connected to the commercial hubs
+                    of Navi Mumbai. Sion Panvel Highway and Seawoods Railway
+                    Station are 5-10 minutes away. The Atal Setu and the
+                    upcoming Navi Mumbai International Airport are just a
+                    20-minute drive away via the Airport Road. So, embrace
+                    exclusivity with the designer residences of Gami Palm Amore
+                    in Seawoods.
+                  </span>
+                </span>
+                <br />
+                <div class="text-center my-3">
+                  <span
+                    class="read_more2"
+                    onclick="toggleContent('dots30','more30', 'myBtn30')"
+                    id="myBtn30">
+                    Read More
+                  </span>
+                </div>
+              </div>
 
               <div class="text-center">
                 <button
@@ -532,68 +547,113 @@
       </section>
       <!-- Configuration Section Ends -->
 
-      <!-- Amenities  Section  -->
-      <section id="amenities_section" class="mt-5">
+      <!-- Amenities Section -->
+      <section id="amenities_section" class="container p-4 mt-3">
         <div>
-          <h3 class="section-heading pb-3">Amenities</h3>
-          <!-- <h5 class="sub-heading text-center">REQUIRED :- TAGLINE</h5> -->
+          <h3 class="section-heading">Amenities</h3>
         </div>
+        <!-- Amenities  -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img red">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/squash_court.webp"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Squash <span> Court</span></h3>
+                </figcaption>
+              </figure>
+            </div>
 
-        <div class="container-fluid">
-          <div class="amenities_section">
-            <figure class="snip1113">
-              <img src="img/amenities/squash_court.webp" alt="pr-sample1" />
-              <figcaption>
-                <h3>Squash <span> Court</span></h3>
-              </figcaption>
-            </figure>
-            <figure class="snip1113">
-              <img src="img/amenities/kids_play_area.webp" alt="pr-sample1" />
-              <figcaption>
-                <h3>Kids <span> Play Area</span></h3>
-              </figcaption>
-            </figure>
-            <figure class="snip1113">
-              <img src="img/amenities/seniors_lawn.webp" alt="pr-sample1" />
-              <figcaption>
-                <h3>Senior Citizen <span> Area</span></h3>
-              </figcaption>
-            </figure>
-            <figure class="snip1113">
-              <img src="img/amenities/gymnasium.webp" alt="pr-sample1" />
-              <figcaption>
-                <h3>Indoor <span>Gymnasium </span></h3>
-              </figcaption>
-            </figure>
-            <figure class="snip1113">
-              <img src="img/amenities/cafe_lounge.webp" alt="pr-sample1" />
-              <figcaption>
-                <h3>Cafe <span> Lounge</span></h3>
-              </figcaption>
-            </figure>
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img blue">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/kids_play_area.webp"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Kids Play <span> Area</span></h3>
+                </figcaption>
+              </figure>
+            </div>
 
-            <figure class="snip1113">
-              <img src="img/amenities/skating_plaza.webp" alt="pr-sample1" />
-              <figcaption>
-                <h3>Skating <span> Plaza </span></h3>
-              </figcaption>
-            </figure>
-            <figure class="snip1113">
-              <img src="img/amenities/yoga_lawn.webp" alt="pr-sample1" />
-              <figcaption>
-                <h3>Yoga <span> Lawn</span></h3>
-              </figcaption>
-            </figure>
-            <figure class="snip1113">
-              <img src="img/amenities/swimming_pool.webp" alt="pr-sample1" />
-              <figcaption>
-                <h3>Swimming <span> Pool</span></h3>
-              </figcaption>
-            </figure>
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/seniors_lawn.webp"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Senior Citizen <span> Area</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img red">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/gymnasium.webp"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Indoor <span> Gymnasium</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/cafe_lounge.webp"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Cafe <span> Lounge</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img blue">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/skating_plaza.webp"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Skating <span> Plaza</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img red">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/yoga_lawn.webp"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Yoga <span> Lawn</span></h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+              <figure class="fig_img">
+                <img
+                  class="img-fluid"
+                  src="img/amenities/swimming_pool.webp"
+                  alt="sample33" />
+                <figcaption>
+                  <h3>Swimming <span> Pool</span></h3>
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </div>
 
-        <div class="text-center mt-5">
+        <div class="text-center">
           <button
             class="btn btn-primary-estate me-3 mb-3 download_btn"
             data-bs-toggle="modal"

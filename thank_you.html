@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -235,7 +235,7 @@
             <br />
             <span
               class="read_more2"
-              onclick="toggleContent('dots20','more20', 'myBtn20')"
+              onclick="toggleContent('dots20', 'more20', 'myBtn20')"
               id="myBtn20">
               Read More
             </span>
@@ -348,7 +348,11 @@
                         maxlength="10"
                         pattern="[0-9]{10}"
                         placeholder="Phone Number *"
-                        oninvalid="setCustomValidity('Please enter a valid phone number. e.g., 12345-67890')"
+                        oninvalid="
+                          setCustomValidity(
+                            'Please enter a valid phone number. e.g., 12345-67890',
+                          )
+                        "
                         oninput="setCustomValidity('')"
                         required />
                     </div>
@@ -423,13 +427,12 @@
             <i class="fa-solid fa-taxi fa-beat nav-icon"> </i> Site Visit
           </a>
         </li>
-        <li
-          class="nav-item ps-1"
-          data-bs-toggle="modal"
-          data-bs-target="#popupModal"
-          data-modal-title="Call Back">
-          <a class="text-decoration-none">
-            <i class="fa-solid fa-phone fa-beat me-2"></i> Call Back
+        <li class="nav-item ps-1" data-modal-title="Call Now">
+          <a
+            class="text-decoration-none"
+            onclick="return gtag_report_conversion('tel:+919136917464');"
+            href="tel:+919136917464">
+            <i class="fa-solid fa-phone fa-beat me-2"></i> Call Now
           </a>
         </li>
         <li
@@ -442,5 +445,18 @@
       </ul>
     </div>
     <!-- Mobile Footer Fixed Button Ends -->
+
+    <!-- WhatsApp Floating Button -->
+    <div>
+      <a
+        href="https://wa.me/+919152477717?text=Hello%20I%20am%20interested in%20Palm%20Amore."
+        class="whatsapp-float"
+        target="_blank"
+        aria-label="Chat on WhatsApp">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="WhatsApp" />
+      </a>
+    </div>
   </body>
 </html>

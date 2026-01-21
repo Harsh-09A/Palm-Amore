@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Palm Amore</title>
+    <title>Gami Palm Amore</title>
 
     <!-- SEO -->
-    <meta property="og:title" content="Palm Amore" />
+    <meta property="og:title" content="Gami Palm Amore" />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
     <meta property="og:description" content="" />
@@ -298,7 +298,7 @@
                 <div class="text-center my-3">
                   <span
                     class="read_more2"
-                    onclick="toggleContent('dots30','more30', 'myBtn30')"
+                    onclick="toggleContent('dots30', 'more30', 'myBtn30')"
                     id="myBtn30">
                     Read More
                   </span>
@@ -971,7 +971,7 @@
                     </span>
                   </div>
                   <button
-                    onclick="toggleContent('dots8','more8', 'myBtn8')"
+                    onclick="toggleContent('dots8', 'more8', 'myBtn8')"
                     class="read_more"
                     id="myBtn8">
                     Read More
@@ -1030,7 +1030,11 @@
                             name="contact_number"
                             pattern="[0-9]{10}"
                             placeholder="Phone Number"
-                            oninvalid="setCustomValidity('Please enter a valid phone number. e.g., 12345-67890')"
+                            oninvalid="
+                              setCustomValidity(
+                                'Please enter a valid phone number. e.g., 12345-67890',
+                              )
+                            "
                             oninput="setCustomValidity('')"
                             required />
                         </div>
@@ -1047,21 +1051,15 @@
                             data-gtm-form-interact-field-id="0" />
 
                           <label
-                            class="ps-2 pb-2 custom-control-label text-left"
-                            for="privacy_check_modal"
-                            style="font: inherit; color: whitesmoke">
-                            Please be advised that this website is not intended
-                            to facilitate any sales transactions. I acknowledge
-                            that the project in which I am expressing interest
-                            has not yet secured RERA clearance. The purpose of
-                            this website is solely to generate interest and
-                            gather information. I hereby consent to the use of
-                            my provided data in accordance with the established
+                            class="ps-2 pb-2 custom-control-label"
+                            for="privacy_check_modal">
+                            I consent to the use of my provided data in
+                            accordance with the
                             <a
                               href="privacy_policy.html"
                               target="_blank"
-                              style="font: inherit; color: whitesmoke"
-                              >privacy policy.</a
+                              style="font: inherit; color: inherit"
+                              >privacy policy</a
                             >.</label
                           >
                         </div>
@@ -1149,7 +1147,7 @@
             <br />
             <span
               class="read_more2"
-              onclick="toggleContent('dots20','more20', 'myBtn20')"
+              onclick="toggleContent('dots20', 'more20', 'myBtn20')"
               id="myBtn20">
               Read More
             </span>
@@ -1262,7 +1260,11 @@
                         maxlength="10"
                         pattern="[0-9]{10}"
                         placeholder="Phone Number *"
-                        oninvalid="setCustomValidity('Please enter a valid phone number. e.g., 12345-67890')"
+                        oninvalid="
+                          setCustomValidity(
+                            'Please enter a valid phone number. e.g., 12345-67890',
+                          )
+                        "
                         oninput="setCustomValidity('')"
                         required />
                     </div>
@@ -1279,21 +1281,15 @@
                         data-gtm-form-interact-field-id="0" />
 
                       <label
-                        class="ps-2 pb-2 custom-control-label text-left"
-                        for="privacy_check_modal"
-                        style="font: inherit; color: black">
-                        Please be advised that this website is not intended to
-                        facilitate any sales transactions. I acknowledge that
-                        the project in which I am expressing interest has not
-                        yet secured RERA clearance. The purpose of this website
-                        is solely to generate interest and gather information. I
-                        hereby consent to the use of my provided data in
-                        accordance with the established
+                        class="ps-2 pb-2 custom-control-label"
+                        for="privacy_check_modal">
+                        I consent to the use of my provided data in accordance
+                        with the
                         <a
                           href="privacy_policy.html"
                           target="_blank"
-                          style="font: inherit; color: black"
-                          >privacy policy.</a
+                          style="font: inherit; color: inherit"
+                          >privacy policy</a
                         >.</label
                       >
                     </div>
@@ -1343,13 +1339,12 @@
             <i class="fa-solid fa-taxi fa-beat nav-icon"> </i> Site Visit
           </a>
         </li>
-        <li
-          class="nav-item ps-1"
-          data-bs-toggle="modal"
-          data-bs-target="#popupModal"
-          data-modal-title="Call Back">
-          <a class="text-decoration-none">
-            <i class="fa-solid fa-phone fa-beat me-2"></i> Call Back
+        <li class="nav-item ps-1" data-modal-title="Call Now">
+          <a
+            class="text-decoration-none"
+            onclick="return gtag_report_conversion('tel:+919136917464');"
+            href="tel:+919136917464">
+            <i class="fa-solid fa-phone fa-beat me-2"></i> Call Now
           </a>
         </li>
         <li
